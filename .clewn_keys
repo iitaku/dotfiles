@@ -30,8 +30,9 @@
 #
 #
 #	C-Z::		    # interrupt
-#	B:info breakpoints:
-#	L:info locals:
+	B::
+	L::
+	C-L:info locals:
 #	A:info args:
 #	S:step:
 #	I:stepi:
@@ -45,7 +46,8 @@
 #	C-U:up:
 #	C-D:down:
 
-#	C-B:break:%line	    # set breakpoint at current line
+	C-B::	    # set breakpoint at current line
+	C-K:break:%line	    # set breakpoint at current line
 #	C-E:clear:%line	    # clear breakpoint at current line
 
 #	C-K:break *:%text   # set breakpoint at address at mouse position
