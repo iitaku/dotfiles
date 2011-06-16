@@ -1,0 +1,13 @@
+MODKEY=Mod1
+
+WMII_FOCUSCOLORS='#ffffff #285577 #4C7899'
+WMII_BACKGROUND='#333333'
+WMII_NORMCOLORS='#888888 #222222 #333333'
+
+wmiir write /tagrules <<!
+/MPlayer|VLC/ -> ~
+/Firefox.*/ -> 2
+/Thunderbird.*/ -> 3
+/Skype.*/ -> 3
+/.*/ -> sel
+!
