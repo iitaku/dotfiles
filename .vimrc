@@ -1,5 +1,5 @@
 set nocompatible
-colorscheme wombat256
+colorscheme desert
 syntax on
 
 set expandtab
