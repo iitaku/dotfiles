@@ -77,7 +77,8 @@
 #	R:run:
 #	Q:quit:
 #	C:continue:
-#	W:where:
+ 	W::
+ 	C-W:where:
 #	u:up:
 #	d:down:
 
