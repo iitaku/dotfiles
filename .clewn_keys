@@ -42,7 +42,7 @@
 #	R:run:
 #	Q:quit:
 #	C:continue:
-#	W:where:
+ 	W::
 #	C-U:up:
 #	C-D:down:
 
@@ -77,8 +77,7 @@
 #	R:run:
 #	Q:quit:
 #	C:continue:
- 	W::
- 	C-W:where:
+#	W:where:
 #	u:up:
 #	d:down:
 
