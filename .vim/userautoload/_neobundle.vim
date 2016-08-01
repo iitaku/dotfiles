@@ -25,11 +25,11 @@ NeoBundle 'codeape2/vim-multiple-monitors'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'hewes/unite-gtags'
 NeoBundle 'iitaku/clewn.vim'
-NeoBundle 'phildawes/racer', {
-      \ 'build' : {
-      \       'unix' : 'cargo build --release'
-      \     },
-      \ }
+" 0NeoBundle 'phildawes/racer', {
+"       \ 'build' : {
+"       \       'unix' : 'cargo build --release'
+"       \     },
+"       \ }
 NeoBundle 'rhysd/rust-doc.vim'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/neomru.vim'

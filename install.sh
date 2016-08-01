@@ -1,36 +1,42 @@
 #!/usr/bin/zsh
+setopt EXTENDED_GLOB
+
+DOT_ROOT=$(dirname $(readlink -f $0))
+
+#
+# depends
+#
+git submodule init
+git submodule update
 
 #
 # shell
 #
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-setopt EXTENDED_GLOB
-for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+ln -s ${DOT_ROOT}/.zprezto ${HOME}
+for rcfile in "${HOME}"/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${HOME}/.${rcfile:t}"
 done
 
 #
 # editor
 #
-cp -R .vimrc ${HOME}
-cp -R .vim/ ${HOME}
-mkdir -p ~/.vim/bundle
-git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+ln -s ${DOT_ROOT}/.vimrc ${HOME}
+ln -s ${DOT_ROOT}/.vim ${HOME}
 
 #
 # window manager
 #
-cp -R .wmii/ ${HOME}
+ln -s ${DOT_ROOT}/.wmii ${HOME}
 
 #
 # keybind
 #
-cp -R .Xmodmap ${HOME}
+ln -s ${DOT_ROOT}/.Xmodmap ${HOME}
 
 #
 # development
 #
-cp -R .gdb/ ${HOME}
-cp -R .gdbinit ${HOME}
+ln -s ${DOT_ROOT}/.gdb ${HOME}
+ln -s ${DOT_ROOT}/.gdbinit ${HOME}
 
-cp -R .clewn_keys ${HOME}
+ln -s ${DOT_ROOT}/.clewn_keys ${HOME}
