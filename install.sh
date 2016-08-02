@@ -7,7 +7,7 @@ DOT_ROOT=$(dirname $(readlink -f $0))
 # depends
 #
 git submodule init
-git submodule update
+git submodule update --recursive
 
 #
 # shell
@@ -20,8 +20,9 @@ done
 #
 # editor
 #
-ln -s ${DOT_ROOT}/.vimrc ${HOME}
 ln -s ${DOT_ROOT}/.vim ${HOME}
+ln -s ${DOT_ROOT}/.vimrc ${HOME}
+ln -s ${DOT_ROOT}/.gvimrc ${HOME}
 
 #
 # window manager
