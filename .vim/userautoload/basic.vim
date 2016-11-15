@@ -1,6 +1,9 @@
 " VIM is improved !
 set nocompatible
 
+" Makes Ctrl-i Esc
+" imap <c-i> <esc>
+
 " syntax
 syntax on
 filetype on
@@ -14,9 +17,9 @@ colorscheme molokai
 set expandtab
 
 " indent is 2
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 
 " beautiful indent
 set autoindent
@@ -36,7 +39,7 @@ set encoding=utf-8
 set fileencodings=utf-8,euc-jp,cp932,iso-2022-jp
 
 " fold by syntax
-set foldmethod=syntax
+set foldmethod=manual
 set foldlevel=1
 set foldnestmax=2
 set nofoldenable
@@ -80,7 +83,8 @@ augroup BinaryXXD
   autocmd BufReadPre  *.bin let &binary =1
   autocmd BufReadPost * if &binary | silent %!xxd -g 1
   autocmd BufReadPost * set ft=xxd | endif
-  autocmd BufWritePre * if &binary | %!xxd -r | endif
+  autocmd BufWritePre * if &binary | %!xxd -r
+  autocmd BufWritePre * endif
   autocmd BufWritePost * if &binary | silent %!xxd -g 1
   autocmd BufWritePost * set nomod | endif
 augroup END

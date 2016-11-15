@@ -46,16 +46,18 @@
 #	C-U:up:
 #	C-D:down:
 
-	C-B::	    # set breakpoint at current line
+	C-B::	            # set breakpoint at current line
 	C-K:break:%line	    # set breakpoint at current line
 #	C-E:clear:%line	    # clear breakpoint at current line
 
 #	C-K:break *:%text   # set breakpoint at address at mouse position
 #	C-H:clear *:%text   # clear breakpoint at address at mouse position
+ 	C-H::               # clear breakpoint at address at mouse position
 
 #	C-P:print:%text	    # print value of word at mouse position
 #	C-X:print *:%text   # print value referenced by text at mouse position
 #	C-J:createvar:%text # add variable (expression) at mouse position
+	C-J::               # add variable (expression) at mouse position
 #
 # #####################################################################
 #                     Vim version prior to 7.0

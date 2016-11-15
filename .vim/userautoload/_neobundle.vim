@@ -33,6 +33,7 @@ NeoBundle 'iitaku/clewn.vim'
 NeoBundle 'rhysd/rust-doc.vim'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/neomru.vim'
+NeoBundle 'Shougo/unite-outline'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler'
 NeoBundle 'Shougo/vimproc', {

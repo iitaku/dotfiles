@@ -37,7 +37,8 @@ ln -s ${DOT_ROOT}/.Xmodmap ${HOME}
 #
 # development
 #
-ln -s ${DOT_ROOT}/.gdb ${HOME}
+mkdir ${HOME}/.gdb
+svn co svn://gcc.gnu.org/svn/gcc/trunk/libstdc++-v3/python ${HOME}/.gdb/python
 ln -s ${DOT_ROOT}/.gdbinit ${HOME}
 
 ln -s ${DOT_ROOT}/.clewn_keys ${HOME}
