@@ -23,6 +23,7 @@ done
 ln -s ${DOT_ROOT}/.vim ${HOME}
 ln -s ${DOT_ROOT}/.vimrc ${HOME}
 ln -s ${DOT_ROOT}/.gvimrc ${HOME}
+ln -s ${DOT_ROOT}/nvim ${HOME}/.config/nvim
 
 #
 # window manager
