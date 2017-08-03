@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/iitaku/.vim/bundle'
-let g:netrw_dirhist_2='/home/iitaku/.vim'
-let g:netrw_dirhist_3='/home/iitaku/.vim/userautoload'
-let g:netrw_dirhist_4='/home/iitaku'
-let g:netrw_dirhist_5='/home'
-let g:netrw_dirhist_6='/home/iitaku/.config/nvim/userautoload'
-let g:netrw_dirhist_7='/home/iitaku'

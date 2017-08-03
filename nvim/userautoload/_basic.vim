@@ -2,6 +2,9 @@
 set nocompatible
 set noswapfile
 
+" true color
+set termguicolors
+
 " Makes Ctrl-i Esc
 " imap <c-i> <esc>
 
@@ -89,6 +92,3 @@ augroup BinaryXXD
   autocmd BufWritePost * if &binary | silent %!xxd -g 1
   autocmd BufWritePost * set nomod | endif
 augroup END
-
-" true color
-set termguicolors
