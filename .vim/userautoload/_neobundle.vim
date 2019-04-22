@@ -49,5 +49,6 @@ NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'wting/rust.vim'
 NeoBundle 't9md/vim-quickhl'
 NeoBundle 'easymotion/vim-easymotion'
+NeoBundle 'fatih/vim-go'
 
 call neobundle#end()

@@ -10,6 +10,9 @@ filetype on
 filetype indent on
 filetype plugin on
 
+" disable swapfile
+set noswapfile
+
 " basic color
 colorscheme molokai
 
