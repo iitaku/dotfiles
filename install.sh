@@ -12,25 +12,25 @@ git submodule update --recursive
 #
 # shell
 #
-ln -s ${DOT_ROOT}/.zshrc ${HOME}
+ln -sf ${DOT_ROOT}/.zshrc ${HOME}
 
 #
 # editor
 #
-ln -s ${DOT_ROOT}/.vim ${HOME}
-ln -s ${DOT_ROOT}/.vimrc ${HOME}
-ln -s ${DOT_ROOT}/.gvimrc ${HOME}
-ln -s ${DOT_ROOT}/nvim ${HOME}/.config/nvim
+ln -sf ${DOT_ROOT}/.vim ${HOME}
+ln -sf ${DOT_ROOT}/.vimrc ${HOME}
+ln -sf ${DOT_ROOT}/.gvimrc ${HOME}
+ln -sf ${DOT_ROOT}/nvim ${HOME}/.config/nvim
 
 #
 # window manager
 #
-ln -s ${DOT_ROOT}/.config/i3 ${HOME}/.config/i3
+ln -sf ${DOT_ROOT}/.config/i3 ${HOME}/.config/i3
 
 #
 # keybind
 #
-ln -s ${DOT_ROOT}/.Xmodmap ${HOME}
+ln -sf ${DOT_ROOT}/.Xmodmap ${HOME}
 
 #
 # development
@@ -39,4 +39,4 @@ ln -s ${DOT_ROOT}/.Xmodmap ${HOME}
 # svn co svn://gcc.gnu.org/svn/gcc/trunk/libstdc++-v3/python ${HOME}/.gdb/python
 # ln -s ${DOT_ROOT}/.gdbinit ${HOME}
 
-ln -s ${DOT_ROOT}/.clewn_keys ${HOME}
+ln -sf ${DOT_ROOT}/.clewn_keys ${HOME}
