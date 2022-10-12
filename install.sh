@@ -17,7 +17,9 @@ ln -sf ${DOT_ROOT}/.zshrc ${HOME}
 #
 # editor
 #
-ln -sf ${DOT_ROOT}/.vim ${HOME}
+if [[ ! -f ${HOME}/.vim ]]; then
+  ln -sf ${DOT_ROOT}/.vim ${HOME}
+fi
 ln -sf ${DOT_ROOT}/.vimrc ${HOME}
 ln -sf ${DOT_ROOT}/.gvimrc ${HOME}
 ln -sf ${DOT_ROOT}/nvim ${HOME}/.config/nvim
@@ -25,7 +27,9 @@ ln -sf ${DOT_ROOT}/nvim ${HOME}/.config/nvim
 #
 # window manager
 #
-ln -sf ${DOT_ROOT}/.config/i3 ${HOME}/.config/i3
+if [[ ! -f ${HOME}/.config/i3 ]]; then
+  ln -sf ${DOT_ROOT}/.config/i3 ${HOME}/.config/i3
+fi
 
 #
 # keybind
