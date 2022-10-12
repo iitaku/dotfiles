@@ -12,10 +12,7 @@ git submodule update --recursive
 #
 # shell
 #
-ln -s ${DOT_ROOT}/.zprezto ${HOME}
-for rcfile in "${HOME}"/.zprezto/runcoms/^README.md(.N); do
-  ln -s "$rcfile" "${HOME}/.${rcfile:t}"
-done
+ln -s ${DOT_ROOT}/.zshrc ${HOME}
 
 #
 # editor
@@ -28,7 +25,7 @@ ln -s ${DOT_ROOT}/nvim ${HOME}/.config/nvim
 #
 # window manager
 #
-ln -s ${DOT_ROOT}/.wmii ${HOME}
+ln -s ${DOT_ROOT}/.config/i3 ${HOME}/.config/i3
 
 #
 # keybind
@@ -38,8 +35,8 @@ ln -s ${DOT_ROOT}/.Xmodmap ${HOME}
 #
 # development
 #
-mkdir ${HOME}/.gdb
-svn co svn://gcc.gnu.org/svn/gcc/trunk/libstdc++-v3/python ${HOME}/.gdb/python
-ln -s ${DOT_ROOT}/.gdbinit ${HOME}
+# mkdir ${HOME}/.gdb
+# svn co svn://gcc.gnu.org/svn/gcc/trunk/libstdc++-v3/python ${HOME}/.gdb/python
+# ln -s ${DOT_ROOT}/.gdbinit ${HOME}
 
 ln -s ${DOT_ROOT}/.clewn_keys ${HOME}
