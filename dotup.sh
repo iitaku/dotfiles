@@ -10,7 +10,7 @@ git submodule update --recursive
 #
 # shell
 #
-ln -sf ${DOT_ROOT}/.zshrc ${HOME}
+# ln -sf ${DOT_ROOT}/.zshrc ${HOME}
 
 #
 # editor
@@ -29,8 +29,23 @@ fi
 # Screen emulator
 #
 ln -s ${DOT_ROOT}/.tmux/.tmux.conf ${HOME}
+ln -s ${DOT_ROOT}/.tmux.conf.local ${HOME}
 
 #
 # GDB
 #
 ln -s ${DOT_ROOT}/.gdbinit ${HOME}
+
+#
+# git
+#
+cat <<EOF > ${HOME}/.gitconfig
+[user]
+	name = Takuro Iizuka
+	email = iitaku@gmail.com
+[alias]
+	st = status -s
+    lg = log --oneline --graph --decorate --branches --remotes --tags
+[core]
+	editor = vim
+EOF
